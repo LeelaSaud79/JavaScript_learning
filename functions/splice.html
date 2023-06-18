@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Splice and slice in Javascript</h1>
+    <p id = "class"></p>
+    <p id = "class2"></p>
+    <script>
+        const fruit = ["apple" ,"Banana", "cherry", "mango"];
+        let newfruit = fruit.splice(2,1,"kiwi", "litchi");
+        document.getElementById("class").innerHTML = newfruit;
+    </script>
+</body>
+</html>

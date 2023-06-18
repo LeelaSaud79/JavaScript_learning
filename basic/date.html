@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dates in Javascript</h1>
+    <p id = "class"></p>
+
+<script>
+    let today = new Date();
+    let someday = new Date();
+    someday.setFullYear(2025,1,14);
+
+    if(someday > today)
+    {
+        text = "someday is greater than today";
+    }else{
+        text = " today is greater than someday";
+    }
+    document.getElementById("class").innerHTML = text;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- if else statement in Javascript -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+<body>
+    <h1>If else statement</h1>
+    <p id = "class"></p>
+    <script>
+        const time = new Date().getHours();
+        let greeting;
+        if(time<10){
+            greeting = "Good Morning";
+        }
+        else {
+            greeting = "good evening";
+
+        }
+
+        document.getElementById("class").innerHTML = greeting;
+
+    </script>
+</body>
+</html>

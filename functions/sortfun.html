@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript arrays Sorting method</h1>
+    <p> click the button to sort the array alphabetically or numerically</p>
+    <button onclick="myfunction1()">Sort alphabetically</button>
+    <button onclick="myfunction2()">Sort numerically</button>
+    <p id = "class"></p>
+
+    <script>
+        const arr = [23, 12, 9, 0, 122];
+        document.getElementById("class").innerHTML = arr;
+
+        function myfunction1(){
+            arr.sort();
+            document.getElementById("class").innerHTML = arr;
+        }
+
+        function myfunction2(){
+            arr.sort(function(a,b) {return a-b});
+            document.getElementById("class").innerHTML = arr;
+        }
+
+    </script>
+</body>
+</html>

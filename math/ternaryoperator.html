@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ternary Operator In Javascript</h1>
+    <h2> The () ? : Ternary Operator</h2>
+    <p> Input your age and click the button</p>
+    <input id = "age" value = "18"/>
+    <button onclick = "myFunction()">Try it</button>
+    <p id = "class"></p>
+    <script>
+        function myFunction(){
+            let age = document.getElementById("age").value;
+            let vote = (age<18)? "Too Young" : "Old enough";
+            document.getElementById("class").innerHTML = vote + "to vote.";
+        }
+
+    </script>
+</body>
+</html>

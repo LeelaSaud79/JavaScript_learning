@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set</title>
+</head>
+<body>
+    <h1>Create a set in array</h1>
+    <p id = "class"></p>
+    <script>
+        const letter = new Set(["a" , "b", "c"]);
+        letter.add("d");
+        document.getElementById("class").innerHTML = letter.size;
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Using for Each loop </h1>
+    <h2>Foreach method calls a function once for each array element</h2>
+    <p id = "class"></p>
+    <script>
+        let num = [6,9,1,2,90,2,22];
+        let txt = "";
+        num.forEach(myFunction);
+        document.getElementById("class").innerHTML = txt;
+
+        function myFunction(value, index, array){
+            txt += value + "<br>";
+
+        }
+
+
+    </script>
+</body>
+</html>

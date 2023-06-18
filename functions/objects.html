@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h1>Objects in javascript</h1>
+    <p id = "class"></p>
+    <script>
+        const person={
+            firstName : "John",
+            lastName : "Doe",
+            age: 30,
+            eyecolor : "blue"
+        };
+        // document.getElementById("class").innerHTML = person.firstName + " is " + person.age + " years old.";
+        // document.getElementById("class").innerHTML = person.lastName + " has " + person.eyecolor + " eyecolor.";
+
+
+        const sentence1 = person.firstName + " is " + person.age + " years old.";
+        const sentence2 = person.lastName + " has " + person.eyecolor + " eye color.";
+        const sentence3 = person['firstName'] + " " + person['lastName'];
+        
+        document.getElementById("class").innerHTML = sentence1 + "<br>" + sentence2 + "<br>" + sentence3;
+    </script>
+</body>
+</html>

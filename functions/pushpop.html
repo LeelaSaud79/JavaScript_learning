@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Push and Pop in Javascript</h1>
+    <p id = "class"></p>
+    <p id = "class2"></p>
+    <script>
+        const fruits = ["apple","orange", "mango", "litchi"];
+        // let fruit = fruits.pop();
+        // let fruit = fruits.push("Kiwi");
+        // let fruit = fruits.shift();
+        let fruit = fruits.unshift("Lemon");
+        // The push() method returns the new array length:
+        document.getElementById("class").innerHTML = fruit;
+        fruits[1] = "grapes";
+        delete fruits[1];
+        document.getElementById("class2").innerHTML = fruits;
+
+    </script>
+</body>
+</html>

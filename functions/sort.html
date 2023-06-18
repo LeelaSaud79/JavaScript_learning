@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sorting in Javascript</h1>
+    <p id = "class"></p>
+    <p id = "class2"></p>
+    <p id = "class3"></p>
+    <script>
+        const fruits = ["banana", "cherry" , "apple" , "litchi"];
+        const arr =  [10, 100, 2, 5, 12];
+        document.getElementById("class").innerHTML = fruits.sort();
+        document.getElementById("class3").innerHTML = fruits.reverse();
+
+        document.getElementById("class2").innerHTML = arr.sort(function(a,b) { return a-b});
+    </script>
+</body>
+</html>

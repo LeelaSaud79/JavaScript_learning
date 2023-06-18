@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<body>
+    <h1>Map in Javascript</h1>
+    <p id = "class"></p>
+    <p id = "class2"></p>
+    <script>
+        const fruits = new Map([
+            ["apple" , 600],
+            ["bananas" ,800],
+            ["Litchi", 500]
+        ]);
+        // set() method can be used to add new Element and also to modify the existing Element
+        fruits.set("oranges", 900);
+        fruits.set("apple", 200);
+        // document.getElementById("class").innerHTML = fruits.get("apple");
+        document.getElementById("class2").innerHTML = fruits.size;
+        document.getElementById("class").innerHTML = fruits.has("Oppo");
+    </script>
+</body>
+</html>
