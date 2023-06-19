@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+<body>
+    <h1> Class in Javascript</h1>
+    <p id="class"></p>
+    <script>
+        class fruits{
+            constructor(name, price){
+                this.name = name;
+                this.price = price;
+            }
+        }
+        const fruit = new fruits("apple", 355);
+        const fruite = new fruits("orange" , 250);
+
+        document.getElementById("class").innerHTML = fruit.name + " "+ fruite.name;
+    </script>
+</body>
+</html>

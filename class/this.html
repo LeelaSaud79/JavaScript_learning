@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The Javascript <i>This</i>keyword</h1>
+    <p id = "class"></p>
+    <script>
+        // First of all, create an object
+        const Person  = {
+            firstname : "Abira",
+            lastname : "Joles",
+            age: 45,
+            id :255,
+            fullname : function() {
+                return this.firstname + " " + this.lastname;
+            }
+        };
+        document.getElementById("class").innerHTML = Person.fullname();
+    </script>
+</body>
+</html>

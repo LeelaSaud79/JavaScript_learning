@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class</title>
+</head>
+<body>
+    <h1>Class and constructor in Javascript</h1>
+    <p id = "class"></p>
+    <script>
+        class Car{
+            constructor(name, year){
+                this.name = name;
+                this.year = year;
+            }
+            age(){
+                const date = new Date;
+                return date.getFullYear() - this.year;
+            }
+        }
+        const mycar = new Car("Audi", 2020);
+        document.getElementById("class").innerHTML = "My car is " + mycar.age()+ " years old.";
+    </script>
+</body>
+</html>
