@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>EventListener()</h1>
+    <p>The addEventListener() method allows you to add many events to the same element, 
+        without overwriting existing events:</p>
+    <button id="btn">Click it</button>
+    <script>
+        var x = document.getElementById("btn");
+        x.addEventListener("click", myFunction);
+        x.addEventListener("click", otherFunction);
+
+        function myFunction(){
+            alert("Is it right?");
+        }
+
+        function otherFunction(){
+            alert("I think it is");
+        }
+    </script>
+</body>
+</html>

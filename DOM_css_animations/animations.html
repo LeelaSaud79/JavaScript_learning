@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        #container{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            background-color: lightcyan;
+        }
+
+        #animation{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: bisque;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Animations in Javascript</h1>
+    <div id="container">
+        <div id="animation"></div>
+    </div>
+    <p><button onclick="myFunction()">Click here</button></p>
+
+    <script>
+        function myFunction(){
+            let id = null;
+            const x = document.getElementById("animation");
+            let pos = 0;
+            clearInterval(id);
+            id = setInterval(frame,5);
+
+            function frame(){
+                if (pos >= container.clientWidth-animation.offsetWidth ||
+                 pos >= container.clintHeight - animation.offsetHeight){
+                    clearInterval(id)
+                }
+
+                else {
+                    pos++;
+                    x.style.top = pos + "px";
+                    x.style.left = pos + "px";
+
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
