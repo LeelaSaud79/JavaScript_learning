@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>screen width</title>
+</head>
+<body>
+    <!-- The screen.width property returns the width of the visitor's screen in pixels. -->
+    <h2>Screen width property of window</h2>
+    <p id = "class"></p>
+    <script>
+        document.getElementById("class").innerHTML = 
+        "Screen Width :" + screen.width + "px<br>"+
+        "screen height :" + screen.height + "px<br>"+
+        "Available screen width : " + screen.availWidth + "px<br>"+
+        "Available screen height : " + screen.availHeight + "px<br>" + 
+        "Screen Color Depth: " + screen.colorDepth + "px<br>" + 
+        "screen Pixel Depth :" + screen.pixelDepth;
+    </script>
+</body>
+</html>

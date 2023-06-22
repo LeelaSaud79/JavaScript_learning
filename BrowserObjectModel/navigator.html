@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript Navigator</h2>
+    <p id="class"></p>
+    <p id="demo"></p>
+    <p id="class2"></p>
+    <p id="prod"></p>
+    <p id=app></p>
+    <p id="user"></p>
+    <p id="lang"></p>
+    <p id="online"></p>
+    <p id="java"></p>
+    <script>
+        document.getElementById("class").innerHTML =
+            "Navigator CookieEnabled: " + navigator.cookieEnabled;
+        document.getElementById("demo").innerHTML =
+            "Navigator Appcodename :" + navigator.appCodeName;
+        document.getElementById("class2").innerHTML =
+            "Navigator platform :" + navigator.platform;
+        document.getElementById("prod").innerHTML =
+            "navigator product :" + navigator.product;
+        document.getElementById("app").innerHTML =
+            "AppVersion : " + navigator.appName;
+        document.getElementById("user").innerHTML =
+            "UserAgent is :" + navigator.userAgent;
+        document.getElementById("lang").innerHTML =
+            "Navigator Language : " + navigator.language;
+        document.getElementById("online").innerHTML =
+            "Navigator online : " + navigator.onLine;
+        document.getElementById("java").innerHTML =
+            "JavaEnabled is :" + navigator.javaEnabled;
+
+    </script>
+</body>
+
+</html>
