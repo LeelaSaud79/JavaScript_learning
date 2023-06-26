@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h2>Text content</h2>
+    <p id = "01">Hello World</p>
+    <p id = "02">How are you?</p>
+    <script>
+        $(document).ready(function(){
+            var myEle = $("#01");
+            myEle.text("How are you?");
+        });
+
+        
+    </script>
+</body>
+</html>

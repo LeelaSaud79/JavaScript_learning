@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Store and retrieve data from local storage</h2>
+    <p id="class"></p>
+    <script>
+        const myObj = {name: "John", age: 25, city: "New York"};
+        const arr = JSON.stringify(myObj);
+        localStorage.setItem("testJson", arr);
+
+        // Retrieving Data
+        let text = localStorage.getItem("testJson");
+        let obj = JSON.parse(text);
+        document.getElementById("class").innerHTML = obj.name;
+    </script>
+</body>
+</html>

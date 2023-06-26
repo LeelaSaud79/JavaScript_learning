@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Use of reviver function</h3>
+    <!-- The reviver parameter is a function that checks each property, before returning the value. -->
+    <p id = "class"></p>
+    <script>
+        const text = '{"name": "abc", "birth": "2001-2-3", "address": "Maitidevi"}';
+        const arr = JSON.parse(text, function(key, value){
+        if(key == "birth"){
+            return new Date(value);
+
+        }
+        else{
+            return value;
+        }
+        });
+        document.getElementById("class").innerHTML = arr.name + "," + arr.birth;
+
+    </script>
+</body>
+</html>

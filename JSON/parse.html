@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Parsing a JSON array</h2>
+    <p id = "class"></p>
+    <script>
+        const text = '["apple", "orange", "mango", "Litchi"]';
+        const arr = JSON.parse(text);
+        document.getElementById("class").innerHTML = arr[3];
+    </script>
+</body>
+</html>

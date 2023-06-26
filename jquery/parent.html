@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h2>Getting parent HTML element</h2>
+    <p id = "01">Hello hi</p>
+    <p id = "02">Hi, how are you?</p>
+
+
+    <p id = "class"></p>
+    <script>
+
+// document.getElementById("demo").innerHTML = document.getElementById("02").parentNode.nodeName; in javascript
+
+        $(document).ready(function(){
+            $("#class").text ($("#02").parent().prop("nodeName"));
+        })
+    </script>
+    
+</body>
+</html>

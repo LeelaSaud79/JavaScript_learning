@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <h2>Set Html</h2>
+    <div id="01">
+        <p>Hello world</p>
+    </div>
+    <div id="02">
+        <p>How are you</p>
+    </div>
+
+    <p id="class"></p>
+    <script>
+        $(document).ready(function () {
+            $("#02").html("<p>Hello World!</p>");
+        });
+    </script>
+</body>
+
+</html>

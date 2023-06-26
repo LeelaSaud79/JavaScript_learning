@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Access Array using Values</h2>
+<p id="class"></p>
+
+<script>
+const myJSON = '{"name":"Prakriti", "age":24, "food":["momo", "chawmin", "puri"]}';
+const myObj = JSON.parse(myJSON);
+
+document.getElementById("class").innerHTML = myObj.cars[1];
+</script>
+
+</body>
+</html>

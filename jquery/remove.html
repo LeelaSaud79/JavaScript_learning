@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h2>Removing the html elements</h2>
+    <p id = "01">Hello world</p>
+    <p id = "02">How are you?</p>
+
+    <script>
+        $(document).ready(function(){
+            $("#01").remove();
+            // document.getElementById("01").remove(); in javascript we remove like this
+        });
+    </script>
+</body>
+</html>

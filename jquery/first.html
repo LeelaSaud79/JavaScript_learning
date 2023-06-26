@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h2>Finding HTML elements by query selector</h2>
+    <p id="class"></p>
+    <p class="demo">Hello World</p>
+    <p class ="intro">How are you? </p>
+    <script>
+        $(document).ready(function(){
+            var ele = $("p.demo");
+            var myEle = $("p.intro");
+            $("#class").text("Introduction with class ='demo' is: " + ele[0].innerHTML);
+        });
+    </script>
+
+</body>
+</html>

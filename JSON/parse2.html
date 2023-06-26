@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Convert a string into a data object</h2>
+    <p id = "class"></p>
+    <script>
+        const obj = '{"name": "John", "birth" : "2000/12/2", "age" : 23, "address" : "Maitidevi"}';
+        const arr = JSON.parse(obj);
+        arr.birth = new Date(arr.birth);
+        document.getElementById("class").innerHTML = arr.name + ", " + arr.birth;
+         
+    </script>
+</body>
+</html>

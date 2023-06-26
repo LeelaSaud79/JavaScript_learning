@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h3>Hide html elements</h3>
+    <p id = "01">Hello everyone</p>
+    <p id = "02">How are you doin?</p>
+    <p id = "03">It will be great</p>
+
+    <p id = "class"></p>
+    <script>
+        // document.getElementById("02").style.display = "none"; in javascript we write like this 
+        $(document).ready(function(){
+            $("#01").hide();
+        });
+    </script>
+</body>
+</html>

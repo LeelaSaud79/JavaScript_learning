@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h3>Show html elements</h3>
+    <p id = "01" style="display: none">Hi</p>
+
+    <p id = "03" style="display: none">hello</p>
+    <p id = "02" style="display: none"> How are you</p>
+    <script>
+        $(document).ready(function(){
+            $("#03").show();
+            // document.getElementById("03").style.display = ""; In javascript we write like this
+        });
+    </script>
+</body>
+</html>

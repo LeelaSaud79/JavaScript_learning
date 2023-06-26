@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h2>Changing the style of all html elements</h2>
+    <p id = "class">I hope, you are doing great</p>
+
+    <script>
+        $(document).ready(function(){
+            $("#class").css("font-size", "35px");
+            // document.getElementById("demo").style.fontSize = "35px"; In javascript we do like this
+        });
+    </script>
+</body>
+</html>

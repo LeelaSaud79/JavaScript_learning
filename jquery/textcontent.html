@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h3>Get tect content</h3>
+    <p id = "01">Hello World</p>
+    <p id = "02">How are you?</p>
+    <p id = "03">Hope you are doing well</p>
+    <p id = "class"></p>
+    <script>
+        $(document).ready(function(){
+            var mtText = $("#02").text();
+            $("#class").text(mtText);
+        });
+    </script>
+</body>
+</html>
